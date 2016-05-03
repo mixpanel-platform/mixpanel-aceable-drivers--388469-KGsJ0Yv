@@ -286,18 +286,18 @@
                 if(v.$survey_id == surveyId){
                   answers["Collection ID"] = v.$collection_id;
                   answers["Question ID - " + v.$question_id] = v.$value;
+                  answers["Time"] = v.time;
                 }
             })
             return {
               "distinct_id": user.distinct_id,
               "Email": user.properties.$email,
               "City": user.properties.$city,
-              "Suvery": answers
+              "Survey": answers
+              "Time": time
               }
           });
         }
     </script>
   </body>
 </html>
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
