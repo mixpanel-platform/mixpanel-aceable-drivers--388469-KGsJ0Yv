@@ -53,6 +53,7 @@
               font-weight: 500;
               line-height: 20px;
       }
+
 .editMPT {
     background-image: url('//cdn.mxpnl.com/cache/8d1bd66012e0d2d598cdc9c8bde18af9/images/reports/mpplatform/header_icons.png');
     background-repeat: no-repeat;
@@ -286,7 +287,7 @@
                 if(v.$survey_id == surveyId){
                   answers["Collection ID"] = v.$collection_id;
                   answers["Question ID - " + v.$question_id] = v.$value;
-                  answers["Time"] = v.$time;
+                  answers["Time"] = v.$time
                   console.log(answers)
                 }
             })
@@ -294,7 +295,7 @@
               "distinct_id": user.distinct_id,
               "Email": user.properties.$email,
               "City": user.properties.$city,
-              "Survey": answers
+              "Suvery": answers
               }
           });
         }
