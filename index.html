@@ -286,7 +286,8 @@
                 if(v.$survey_id == surveyId){
                   answers["Collection ID"] = v.$collection_id;
                   answers["Question ID - " + v.$question_id] = v.$value;
-                  answers["Time"] = v.time;
+                  answers["Time"] = v.$time;
+                  console.log(answers)
                 }
             })
             return {
@@ -294,7 +295,6 @@
               "Email": user.properties.$email,
               "City": user.properties.$city,
               "Survey": answers
-              "Time": time
               }
           });
         }
