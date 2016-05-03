@@ -288,14 +288,13 @@
                   answers["Collection ID"] = v.$collection_id;
                   answers["Question ID - " + v.$question_id] = v.$value;
                   answers["Time"] = v.$time
-                  // console.log(answers)
                 }
             })
             return {
               "distinct_id": user.distinct_id,
               "Email": user.properties.$email,
               "City": user.properties.$city,
-              "Suvery": answers
+              "Survey": answers
               }
           });
         }
